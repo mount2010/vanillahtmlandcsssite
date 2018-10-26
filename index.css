@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+}
+.navbar {
+    position: sticky;
+    width: 100%;
+    background-color: rgba(100%, 83.1%, 70.6%, 0.75);
+    top: -1px;
+    z-index: 1;
+    box-shadow: 0px 1px black;
+    transition: background-color 1s;
+}
+.navbar:hover {
+    background-color: rgba(100%, 83.1%, 70.6%, 1);
+}
+.navbar-content {
+    font-family: "Verdana", sans-serif;
+    position: relative;
+    top: 0; left: 0; right: 0; bottom: 0;
+    width: 100%;
+    display: flex;
+}
+.circle {
+    border-radius: 50%;
+    height: 2rem;
+    background-color: #000000;
+}
+.navbar-branding {
+    display: flex;
+    font-size: 1.5rem;
+    width: 80%;
+    align-content: center;
+    justify-content: left;
+    float: left;
+}
+.navbar-logo {
+    padding: 1rem;
+    margin-left: 2rem;
+    float: left;
+}
+.navbar-text {
+    float: right;
+    padding: 0;
+    margin: 0rem 1rem;
+}
+.menu {
+    float: right;  
+    width: 20%;
+    height: 100%;
+    position: relative;
+    align-content: center;
+    justify-content: right;
+}
+
+.menu-button {
+    position: relative;
+    width: 100%; height: 100%;
+    float: right;
+}
+
+.menu-content {
+    display: none;
+    width: 0%; height: 0%;
+    padding: 0; margin: 0;
+}
+
+.menu-button:focus .menu-content {
+    position: fixed;
+    right: 0; top: 0;
+    display: block;
+    margin: 0;
+    background-color: rgba(75%, 75%, 75%, 0.75);
+    color: #000000;
+    font-family: "Helvetica", sans-serif;
+    font-size: 1rem;
+    height: 100%; width: 50%;
+}
+
+.menu-inner-button {
+    top: 0; left: 0;
+    background-color: rgba(100%, 100%, 100%, 0.75);
+    width: 100%;
+    display: block;
+    padding: 1rem;
+    color: #000000;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.menu-inner-button:hover {
+    background-color: rgba(75%, 75%, 75%, 0.75);
+}
+
+@media (min-width: 750px) {
+    .menu-button {
+        display: none;
+    }
+} 
+
+.content-box {
+    padding: 3rem;
+    font-family: "Helvetica", sans-serif;
+    background-color: #ffffff;
+    
+}
+.content {
+    padding: 0rem 3rem;
+    color: #222222;
+    border-left: 5px solid #777777;
+    z-index: 0;
+}
+.container {
+    position: absolute;
+    height: 100%; width: 100%;
+    top: 0; bottom: 0; right: 0; left: 0;  
+    overflow: auto;
+    margin: 0; padding: 0;
+    background: linear-gradient(to bottom right, #ffd4b4 10%, #fff2ac);
+}
+
+@keyframes moveInFromLeft {
+    from {
+        margin-left: 300px;
+    }
+}
+.banner {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0; padding: 0;
+}
+
+.banner-text-upper {
+    font-family: 'Courgette', cursive;
+    font-size: 4rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 0.5rem;
+}
+.banner-text-lower {
+    font-family: 'Courgette', cursive;
+    font-size: 3rem;
+    margin-top: 0;
+    margin-left: 3rem;
+    margin-bottom: 0.5rem;
+    padding-top: 0;
+    color: #ff0000;
+    animation-name: moveInFromLeft;
+    animation-duration: 2s;
+}
+.footer-box {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    font-family: 'Courgette', cursive;
+}
+.footer {
+    padding-left: 1rem;
+}
