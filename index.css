@@ -43,13 +43,12 @@ body {
     padding: 0;
     margin: 0rem 1rem;
 }
+
 .menu {
     float: right;  
     width: 20%;
     height: 100%;
     position: relative;
-    align-content: center;
-    justify-content: right;
 }
 
 .menu-button {
@@ -97,32 +96,6 @@ body {
     }
 } 
 
-.content-box {
-    padding: 3rem;
-    font-family: "Helvetica", sans-serif;
-    background-color: #ffffff;
-    
-}
-.content {
-    padding: 0rem 3rem;
-    color: #222222;
-    border-left: 5px solid #777777;
-    z-index: 0;
-}
-.container {
-    position: absolute;
-    height: 100%; width: 100%;
-    top: 0; bottom: 0; right: 0; left: 0;  
-    overflow: auto;
-    margin: 0; padding: 0;
-    background: linear-gradient(to bottom right, #ffd4b4 10%, #fff2ac);
-}
-
-@keyframes moveInFromLeft {
-    from {
-        margin-left: 300px;
-    }
-}
 .banner {
     display: flex;
     align-content: center;
@@ -147,6 +120,35 @@ body {
     color: #ff0000;
     animation-name: moveInFromLeft;
     animation-duration: 2s;
+}
+
+.content-box {
+    padding: 5rem;
+    font-family: "Helvetica", sans-serif;
+    background-color: #ffffff;
+    font-size: 22px;
+    line-height: 30px;
+    
+}
+.content {
+    padding: 0rem 3rem;
+    color: #222222;
+    border-left: 5px solid #777777;
+    z-index: 0;
+}
+.container {
+    position: absolute;
+    height: 100%; width: 100%;
+    top: 0; bottom: 0; right: 0; left: 0;  
+    overflow: auto;
+    margin: 0; padding: 0;
+    background: linear-gradient(to bottom right, #ffd4b4 10%, #fff2ac);
+}
+
+@keyframes moveInFromLeft {
+    from {
+        margin-left: 300px;
+    }
 }
 .footer-box {
     position: relative;
