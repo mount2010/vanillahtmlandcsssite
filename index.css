@@ -19,8 +19,7 @@
 }
 .circle {
     border-radius: 50%;
-    height: 2rem;
-    background-color: rgba(0, 0, 0, 255);
+    background-color: rgba(0, 0, 0, 20%);
 }
 .navbar-branding {
     display: flex;
@@ -52,6 +51,7 @@
     height: 50%;
 	width: 25%;
     float: right;
+	display: block;
 }
 
 .menu-content {
