@@ -140,10 +140,43 @@
 }
 .heading {
 	height: 1.5rem;
+	min-width: 1rem;
+	max-width: 75%;
+	display: block;
 	font-size: 1.2rem;
 	line-height: 1.5rem;
+	border-bottom: 2px dashed #666;
+}
+.subheading {
+	height: 1rem;
+	font-size: 1rem;
+	line-height: 1rem;
+	display: block;
+	padding: 0;
+}
+
+.tableofcontents {
+	background-color: #eee;
+	font-size: 1rem;
+	padding: 1rem;
+}
+/* https://stackoverflow.com/questions/14138507/creating-table-of-contents-in-html */
+/*.tableofcontents li {
+	counter-increment: count;
+}
+.tableofcontents li::before {
+	content: counters(count, counters(item, "."), ".")": ";
+}
+.tableofcontents ol {
+	counter-reset: item 0;
+}
+.tableofcontents ol li {
 	display: block;
 }
+.tableofcontents ol li::before {
+	content: counters(item, ".")": ";
+	counter-increment: item;
+}*/
 .quote::before {
 	content: "\""
 }
