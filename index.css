@@ -1,6 +1,3 @@
-body {
-    margin: 0;
-}
 .navbar {
     position: sticky;
     width: 100%;
@@ -23,19 +20,18 @@ body {
 .circle {
     border-radius: 50%;
     height: 2rem;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 255);
 }
 .navbar-branding {
     display: flex;
     font-size: 1.5rem;
-    width: 80%;
+    width: 50%;
     align-content: center;
     justify-content: left;
     float: left;
 }
 .navbar-logo {
     padding: 1rem;
-    margin-left: 2rem;
     float: left;
 }
 .navbar-text {
@@ -46,23 +42,24 @@ body {
 
 .menu {
     float: right;  
-    width: 20%;
+    width: 50%;
     height: 100%;
     position: relative;
 }
 
 .menu-button {
     position: relative;
-    width: 100%; height: 100%;
+    height: 50%;
+	width: 25%;
     float: right;
 }
 
 .menu-content {
     display: none;
+	overflow-x: wrap;
     width: 0%; height: 0%;
     padding: 0; margin: 0;
 }
-
 .menu-button:focus .menu-content {
     position: fixed;
     right: 0; top: 0;
@@ -70,7 +67,7 @@ body {
     margin: 0;
     background-color: rgba(75%, 75%, 75%, 0.75);
     color: #000000;
-    font-family: "Helvetica", sans-serif;
+    font-family: "Oxygen", "Helvetica", sans-serif;
     font-size: 1rem;
     height: 100%; width: 50%;
 }
@@ -90,11 +87,22 @@ body {
     background-color: rgba(75%, 75%, 75%, 0.75);
 }
 
-@media (min-width: 750px) {
+@media screen and (min-width: 700px) {
+	html {
+		font-size: 30px;
+	}
     .menu-button {
         display: none;
     }
-} 
+	.content-box {
+		padding: 5rem;
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+	.content {
+		padding: 0 3rem;
+	}
+}
 
 .banner {
     display: flex;
@@ -106,6 +114,7 @@ body {
 .banner-text-upper {
     font-family: 'Courgette', cursive;
     font-size: 4rem;
+	font-weight: bold;
     margin-bottom: 0;
     padding-bottom: 0;
     margin-top: 0.5rem;
@@ -113,6 +122,7 @@ body {
 .banner-text-lower {
     font-family: 'Courgette', cursive;
     font-size: 3rem;
+	font-weight: bold;
     margin-top: 0;
     margin-left: 3rem;
     margin-bottom: 0.5rem;
@@ -121,20 +131,55 @@ body {
     animation-name: moveInFromLeft;
     animation-duration: 2s;
 }
-
+.highlight {
+	background-color: #000;
+	color: #fff;
+	display: inline-block;
+	padding: 0.2rem;
+	font-weight: bold;
+}
+.heading {
+	height: 1.5rem;
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+	display: block;
+}
+.quote::before {
+	content: "\""
+}
+.quote::after {
+	content: "\""
+}
+.quote {
+	display: block;
+	padding-left: 0.5rem;
+	border-left: 2px solid #666;
+	color: #666;
+}
 .content-box {
-    padding: 5rem;
-    font-family: "Helvetica", sans-serif;
+    /*padding: 5rem;*/
+	border: 0.2rem solid #777777;
+	padding-top: 5rem;
+	padding: 1rem;
+    font-family: "Oxygen", "Verdana", "Roboto", "Segoe UI", "San Franciso", "Ubuntu",  sans-serif;
     background-color: #ffffff;
-    font-size: 22px;
-    line-height: 30px;
-    
+    font-size: 1rem;
+	line-height: 1.5rem;
 }
 .content {
-    padding: 0rem 3rem;
+    padding: 0rem 1rem;
     color: #222222;
     border-left: 5px solid #777777;
     z-index: 0;
+}
+.lead {
+	font-size: 1.5rem;
+	padding: 0.2rem;
+}
+.para {
+	padding-bottom: 2rem;
+	display: inline-block;
+	word-break: break-word;
 }
 .container {
     position: absolute;
